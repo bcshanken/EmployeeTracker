@@ -143,8 +143,8 @@ function viewAllEmployees() {
             type: "list",
             choices: function(){
                 let choiceArray = [];
-                for (var i=0; i < results.lenth; i++){
-                    choiceArray.push(results[i].name);
+                for (var i=0; i < results.length; i++){
+                    choiceArray.push({name: results[i].name, value: results[i].id});
                 }
                 return choiceArray;
             },
@@ -152,27 +152,20 @@ function viewAllEmployees() {
         }
       ])
       .then(function(answer){
-        connection.query("SELECT * FROM department WHERE name=?",
-        [answer.deptName],
-        function(err){
-            if (err) throw err;
-            console.log(res); 
-        });  
-
-
-        //   connection.query(
-        //       "INSERT INTO role SET ?",
-        //       { 
-        //         title: answer.title,
-        //         salary: answer.pay,
-        //         department_id: 
-        //         },
-        //       function(err) {
-        //           if (err) throw err;
-        //           console.log("Your new department has been created.")
-        //           start();
-        //       }
-        //   )
+        
+          connection.query(
+              "INSERT INTO role SET ?",
+              { 
+                title: answer.title,
+                salary: answer.pay,
+                department_id: answer.deptName
+                },
+              function(err) {
+                  if (err) throw err;
+                  console.log("Your new role has been created.")
+                  start();
+              }
+          )
       })
     })
     
