@@ -2,7 +2,9 @@
 
 ## Description
 
-This application is designed to be an employee database. It runs off of node.js, inquirer, jquery.
+This application is designed to be an employee database. It runs off of node.js, inquirer, jquery. 
+
+The Databases are set up as shown below.
 
 ## Instillation
 
@@ -12,7 +14,7 @@ To install the application fork the repo and install on your local machine. Then
 
 In your terminal navigate to the proper workplace. Run node on the index.js file and answer the prompts. The below video will give you a sample of what to expect. 
 
-<a href="https://www.youtube.com/watch?v=zpe5Xqi0vQo&feature=youtu.be
+<a href="https://www.youtube.com/watch?v=YN2rrPvLAeE&feature=youtu.be
 " target="_blank"><img src="https://github.com/bcshanken/notetaker/blob/main/imgs/videoImg.JPG?raw=true)" 
 alt="video image" /></a>
 
