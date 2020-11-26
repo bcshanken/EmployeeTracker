@@ -6,6 +6,9 @@ This application is designed to be an employee database. It runs off of node.js,
 
 The Databases are set up as shown below.
 
+<img src="https://github.com/bcshanken/EmployeeTracker/blob/main/Assets/imgs/dbscheme.JPG?raw=true" 
+alt="database image" />
+
 ## Instillation
 
 To install the application fork the repo and install on your local machine. Then you will need to install all the dependencies.  In order to do this open your terminal and run npm install -y. Next you will want to use the csv files or your own data to fill in the tables that are built out in the schema. After the databases have data, your dependencies are installed, and  you have a connection to the database, you are ready to use the application.
@@ -15,7 +18,7 @@ To install the application fork the repo and install on your local machine. Then
 In your terminal navigate to the proper workplace. Run node on the index.js file and answer the prompts. The below video will give you a sample of what to expect. 
 
 <a href="https://www.youtube.com/watch?v=YN2rrPvLAeE&feature=youtu.be
-" target="_blank"><img src="https://github.com/bcshanken/notetaker/blob/main/imgs/videoImg.JPG?raw=true)" 
+" target="_blank"><img src="https://github.com/bcshanken/EmployeeTracker/blob/main/Assets/imgs/videoImg.JPG?raw=true" 
 alt="video image" /></a>
 
 
